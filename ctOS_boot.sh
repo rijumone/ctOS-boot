@@ -1,11 +1,14 @@
 #!/bin/bash
 
-# Define the directories containing the text files
-cursor_dir="cursor"
-module_dir="module"
-mask_dir="mask"
-rmmask_dir="rmmask"
-system_dir="system"
+# Get the directory of the script
+script_dir=$(dirname "$0")
+
+# Set the relative directory containing the text files
+cursor_dir="$script_dir/cursor"
+module_dir="$script_dir/module"
+mask_dir="$script_dir/mask"
+rmmask_dir="$script_dir/rmmask"
+system_dir="$script_dir/system"
 
 # Function to center text horizontally
 center_text() {

@@ -91,5 +91,9 @@ while true; do
         read_file "$(basename "$file")" "$system_dir"
         sleep 0.2 # Adjust the delay as needed
     done
+    
+    # Clear the screen
+    clear
+    
     break
 done
